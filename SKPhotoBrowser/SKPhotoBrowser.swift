@@ -32,6 +32,7 @@ open class SKPhotoBrowser: UIViewController {
     let animator: SKAnimator = .init()
     
     // child component
+    fileprivate var gradientView: SKGradientView!
     fileprivate var actionView: SKActionView!
     fileprivate(set) var paginationView: SKPaginationView!
     var toolbar: SKToolbar!
@@ -111,6 +112,7 @@ open class SKPhotoBrowser: UIViewController {
         configureAppearance()
         configurePagingScrollView()
         configureGestureControl()
+        configureGradientView()
         configureActionView()
         configurePaginationView()
         configureToolbar()
@@ -565,6 +567,11 @@ private extension SKPhotoBrowser {
         if let panGesture = panGesture {
             view.addGestureRecognizer(panGesture)
         }
+    }
+
+    func configureGradientView() {
+        gradientView = SKGradientView(frame: view.frame)
+        view.addSubview(gradientView)
     }
     
     func configureActionView() {
