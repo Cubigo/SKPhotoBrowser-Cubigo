@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-  s.name                = "SKPhotoBrowser"
+  s.name                = "SKPhotoBrowser-Cubigo"
   s.version             = "7.0.0"
   s.summary             = "Simple PhotoBrowser/Viewer iwritten by pure swift. inspired by facebook, twitter photo browsers."
-  s.homepage            = "https://github.com/suzuki-0000/SKPhotoBrowser"
+  s.homepage            = "https://github.com/Cubigo/SKPhotoBrowser-Cubigo"
   s.license             = { :type => "MIT", :file => "LICENSE" }
-  s.author              = { "suzuki_keishi" => "keishi.1983@gmail.com" }
-  s.source              = { :git => "https://github.com/suzuki-0000/SKPhotoBrowser.git", :tag => s.version }
+  s.author              = { "cubigo" => "accounts.cubigo.com" }
+  s.source              = { :git => "https://github.com/Cubigo/SKPhotoBrowser-Cubigo.git", :tag => s.version }
   s.platform            = :ios, "8.0"
   s.source_files        = "SKPhotoBrowser/**/*.{h,m,swift}"
   s.resources           = "SKPhotoBrowser/SKPhotoBrowser.bundle"
