@@ -143,6 +143,9 @@ open class SKPhotoBrowser: UIViewController {
         // action
         actionView.updateFrame(frame: view.frame)
 
+        // gradient
+        gradientView.updateFrame(frame: view.frame)
+
         // paging
         switch SKCaptionOptions.captionLocation {
         case .basic:
@@ -186,6 +189,10 @@ open class SKPhotoBrowser: UIViewController {
     
     open func loadAdjacentPhotosIfNecessary(_ photo: SKPhotoProtocol) {
         pagingScrollView.loadAdjacentPhotosIfNecessary(photo, currentPageIndex: currentPageIndex)
+    }
+
+    open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        actionView.updateFrame(frame: view.frame)
     }
     
     // MARK: - initialize / setup
