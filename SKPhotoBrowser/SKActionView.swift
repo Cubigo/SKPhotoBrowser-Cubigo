@@ -44,6 +44,7 @@ class SKActionView: UIView {
     
     func updateFrame(frame: CGRect) {
         self.frame = frame
+        self.closeButton.updateFrame()
         setNeedsDisplay()
     }
 

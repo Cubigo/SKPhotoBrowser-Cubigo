@@ -85,6 +85,11 @@ class SKCloseButton: SKImageButton {
         showFrame = CGRect(x: marginX, y: marginY, width: size.width, height: size.height)
         hideFrame = CGRect(x: marginX, y: -marginY, width: size.width, height: size.height)
     }
+
+    func updateFrame() {
+        showFrame = CGRect(x: marginX, y: marginY, width: size.width, height: size.height)
+        hideFrame = CGRect(x: marginX, y: -marginY, width: size.width, height: size.height)
+    }
 }
 
 class SKDeleteButton: SKImageButton {

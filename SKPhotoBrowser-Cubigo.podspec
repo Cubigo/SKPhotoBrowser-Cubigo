@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "SKPhotoBrowser-Cubigo"
-  s.version             = "7.0.3"
+  s.version             = "7.0.4"
   s.summary             = "Simple PhotoBrowser/Viewer iwritten by pure swift. inspired by facebook, twitter photo browsers."
   s.homepage            = "https://github.com/Cubigo/SKPhotoBrowser-Cubigo"
   s.license             = { :type => "MIT", :file => "LICENSE" }
